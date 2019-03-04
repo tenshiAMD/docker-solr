@@ -1,0 +1,125 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+#aaa => aaaa
+#bbb => bbbb1 bbbb2
+#ccc => cccc1,cccc2
+#a\=>a => b\=>b
+#a\,a => b\,b
+#fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+#GB,gib,gigabyte,gigabytes
+#MB,mib,megabyte,megabytes
+#Television, Televisions, TV, TVs
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+#pixima => pixma
+
+# Reference Number
+No.,Nos.,Number,Numbers
+Act,Acts
+AO,A.O.,Administrative Order
+BP,B.P.,BP Blg,BP Blg.,B.P. Blg,B.P. Blg.,Batas Pambansa,Batas Pambansa Blg,Batas Pambansa Bilang
+CA,C.A.,Commonwealth Act
+CAA,C.A.A.,Clean Air Act
+EO,E.O.,Executive Order
+GR,G.R.,General Registry
+LOI,L.O.I.,Letter of Instructions
+MC,M.C.,Mem. Circ.,Memorandum Circular
+Mem.,Memoranda,Memorandum
+MO,M.O.,Mem. Ord.,Mem. Order,Memorandum Order
+PD,P.D.,Pres Decree,Presidential Decree
+PP,P.P.,Pres PROC,Presidential Proclamation
+RA,R.A.,Rep.Act.,Republic Act
+RDAO,R.D.A.O.,Revenue Delegation Authority Order
+
+# Short Title Law/Act
+AFMA,A.F.M.A.,Agriculture and Fisheries Modernization Act
+AMLA,A.M.L.A.,Anti-Money Laundering Act
+ARTA,AR.T.A.,Anti-Red Tape Act
+CAA,C.A.A.,Clean Air Act
+CARP,C.A.R.P., Comprehensive Agrarian Reform Program
+CISFA,C.I.S.F.A.,Comprehensive and Integrated Shelter Finance Act
+EPIRA,E.P.I.R.A.,Electric Power Industry Reform Act
+ESWMA,E.S.W.M.A.,Ecological Solid Waste Management Act of 2000
+FIA,F.I.A.,Freedom of Information Act
+FRIA,F.R.I.A.,Financial Rehabilitation and Insolvency Act
+GAA,G.A.A.,General Appropriations Act
+IPRA,I.P.R.A.,Indigenous People’s Rights Act
+LARA,L.A.R.A.,Land Administration Reform Act
+NALUA,NA.L.U.A.,National Land Use Act
+NDSA,N.D.S.A.,National Defense and Security Act
+PERA,P.E.R.A.,Personal Equity and Retirement Act
+PSA,P.S.A.,Payment System Act
+UDHA,U.D.H.A.,Urban Development and Housing Act
+
+# Court System
+CA,C.A.,Court of Appeals
+CTA,C.T.A.,Court of Tax Appeals
+IAC,I.A.C.,Intermediate Appellate Court
+RTC,R.T.C.,Regional Trial Court
+SB,S.B.,Sandiganbayan
+SC,S.C.,Supreme Court
+
+# Departments
+AFP,A.F.P,Armed Forces of the Philippines
+BAS,B.A.S.,Bureau of Agricultural Statistics
+BFAR,B.F.A.R.,Bureau of Fisheries and Aquatic Resources
+BI,Bureau of Immigration
+BIR,B.I.R.,Bureau of Internal Revenue
+BOC,B.O.C.,Bureau of Customs
+BTr,B.Tr.,Bureau of the Treasury
+CHED,C.H.ED.,Commission on Higher Education
+COA,C.O.A,Commission on Audit
+COMELEC,Commission on Elections
+DA,D.A.,KPS,K.P.S.,Department of Agriculture,Kagawaran ng Pagsasaka
+DAR,D.A.R.,KRP,K.R.P.,Department of Agrarian Reform,Kagawaran ng Repormang Pansakahan
+DBM,D.B.M.,KPP,K.P.P.,Department of Budget and Management,Kagawaran ng Pagbabadyet at Pamamahala
+DepEd,Dep.Ed.,KEd,K.Ed.,Department of Education,Kagawaran ng Edukasyon
+DENR,D.E.N.R.,KKLK,K.K.L.K.,Department of Environment and Natural Resources,Kagawaran ng Kapaligiran at Likas na Kayamanan
+DFA,D.F.A.,KUP,K.U.P.,Department of Foreign Affairs,Kagawaran ng Ugnayang Panlabas
+DHUD,D.H.U.D.,Department of Housing and Urban Development
+DICT,D.I.C.T.,Department of Information and Communications Technology
+DILG,D.I.L.G.,KIPL,K.I.P.L.,Department of the Interior and Local Government,Kagawaran ng Interyor at Pamahalaang Lokal
+DND,D.N.D.,KTP,K.T.P.,Department of National Defense,Kagawaran ng Tanggulang Pambansa
+DOE,KEn,D.O.E.,K.En.,Department of Energy,Kagawaran ng Enerhiya
+DOF,D.O.F.,KNPN,K.N.P.N.,Department of Finance,Kagawaran ng Pananalapi
+DOH,D.O.H.,KNKL,K.N.K.L.,Department of Health,Kagawaran ng Kalusugan
+DOJ,D.O.J.,KNKT,K.N.K.T.,Department of Justice,Kagawaran ng Katarungan
+DOLE,D.O.L.E.,KNPE,K.N.P.E.,Department of Labor and Employment,Kagawaran ng Paggawa at Empleyo
+DOST,D.O.S.T.,KNAT,K.N.A.T.,Department of Science and Technology,Kagawaran ng Agham at Teknolohiya
+DOT,D.O.T.,KNT,K.N.T.,Department of Tourism,Kagawaran ng Turismo
+DOTC,D.O.T.C.,KNTK,K.N.T.K.,Department of Transportation and Communications,Kagawaran ng Transportasyon at Komunikasyon
+DPWH,D.P.W.H.,KPBL,K.P.B.L.,Department of Public Works and Highways,Kagawaran ng Pagawaing Bayan at Lansangan
+DSWD,D.S.W.D.,KKPP,K.K.P.P.,Department of Social Welfare and Development,Kagawaran ng Kagalingang Panlipunan at Pagpapaunlad
+DTI,D.T.I.,KKI,K.K.I.,Department of Trade and Industry,Kagawaran ng Kalakalan at Industriya
+ERC,E.R.C.,Energy Regulatory Commission
+MARINA,Maritime Industry Authority
+NLRC,N.L.R.C.,National Labor Relations Commission
+PAGASA,Philippine Atmospheric Geophysical and Astronomical Services Administration
+
+# Company and related
+ADB,A.D.B.,Asian Development Bank
+ADBI,A.D.B.I.,Asian Development Bank Institute
+APEC,A.P.E.C.,Asia-Pacific Economic Cooperation
+SSS,S.S.S.,Social Security System
+WHO, W.H.O.,World Health Organization
+
+# Others
+Inc.,Incorporated
+v,vs.,versus
+sps.,spouses
